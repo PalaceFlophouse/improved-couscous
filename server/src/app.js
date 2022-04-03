@@ -6,12 +6,18 @@ const morgan = require('morgan');
 
 const app = express();
 app.use(morgan('combined'));
-app.unsubscribe(bodyParser.json());
-app.unsubscribe(cors());
+app.use(bodyParser.json());
+app.use(cors());
 
 app.get('/status', (req, res) => {
     res.send({
         message : "hello world"
+    });
+});
+
+app.post('/register', (req, res) => {
+    res.send({
+        message : `Hello ${req.body.email}! Registered!`
     });
 });
 
