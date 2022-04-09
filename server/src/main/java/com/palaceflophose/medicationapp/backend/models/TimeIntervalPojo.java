@@ -18,4 +18,10 @@ public class TimeIntervalPojo {
 	@Id
 	private String id;
 
+	private String medicationId;
+
+	private String userId;
+
+	private String dayOfWeek;
+	private String time;
 }

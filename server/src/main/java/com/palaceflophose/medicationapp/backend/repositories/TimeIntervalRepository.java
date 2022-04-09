@@ -8,4 +8,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * Date: 4/5/2022
  */
 public interface TimeIntervalRepository extends MongoRepository<TimeIntervalPojo, String> {
+
+	TimeIntervalPojo findByDayAndTime(String day, String time);
+
 }
