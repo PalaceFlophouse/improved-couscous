@@ -14,7 +14,7 @@ import java.util.List;
 @Builder
 @Data
 @Document("Medication")
-public class MedicationPojo {
+public class Medication {
 
 	@Id
 	private String id;

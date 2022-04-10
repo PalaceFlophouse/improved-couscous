@@ -12,22 +12,15 @@ import java.util.List;
  * Date: 4/5/2022
  */
 @Builder
-@AllArgsConstructor
+@Data
 @Document("User")
-public class UserPojo {
+public class User {
 
 	@Id
 	@Indexed(unique = true)
 	private String email;
 
+	private String password;
+
 	private List<String> medIds;
-
-	public String getEmail() {
-		return email;
-	}
-
-	public UserPojo setEmail(String email) {
-		this.email = email;
-		return this;
-	}
 }

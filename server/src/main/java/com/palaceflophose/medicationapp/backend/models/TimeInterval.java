@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Builder
 @Data
 @Document("Time-Interval")
-public class TimeIntervalPojo {
+public class TimeInterval {
 
 	@Id
 	private String id;
